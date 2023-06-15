@@ -1,0 +1,66 @@
+.title {
+    width: 220px;
+    height: 39px;
+    top: 207px;
+
+    background: rgba(173, 173, 173, 0.3);
+    border-radius: 17px;
+}
+
+.geadiente-text {
+    background-image: linear-gradient(to right, #FFFFFF 30%, #090909);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.img {
+  position: absolute;
+  width: 1030px;
+  height: 676px;
+  left: 483px;
+
+  background: url(../assets/ebook.png);
+}
+
+.bg-main {
+    background: linear-gradient(117.04deg, #090909 9.51%, rgba(9, 9, 9, 0.94) 98.98%);
+}
+
+.btn-gold {
+    width: 123px;
+    height: 29px;
+
+    background: linear-gradient(89.89deg, #F4D171 26.38%, #FCFBF8 54.57%, #F4D071 78.51%);
+    border-radius: 5px;
+}
+
+.btn-blue {
+    position: absolute;
+    width: 293px;
+    height: 69px;
+    left: 679px;
+    top: 780px;
+    border-radius: 10px; 
+}
+
+.testimony {
+    top: 530px;
+}
+
+.form {
+    top: 705px;
+}
+
+.featured-text {
+    top: 289px;
+}
+
+.blue-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    
+    background: #0E9AFF;
+}
