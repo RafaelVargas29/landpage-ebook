@@ -26,7 +26,7 @@ export default function Testimony () {
                         <p className={`text-base font-medium text-landBlue ${poppins.className}`}><a href="">@Lyvia Nagib Fulanetti</a></p>
                     </div>
                     
-                    <div className="text-14">
+                    <div className="text-sm">
                         <p className={`${poppins.className} font-medium`}>‘‘Adorei o ebook, tem muitas funções que eu não sabia e estou utilizando muito no meu dia.’’</p>
                     </div>
                 </div>

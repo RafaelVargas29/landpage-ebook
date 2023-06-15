@@ -2,7 +2,7 @@ import { poppins } from "@/app/fonts"
 
 export default function Form () {
     return (
-        <div className="flex flex-col justify-start gap-2">
+        <div className="flex flex-col justify-start gap-2 w-[18.339rem]">
             <form action="" className={`${poppins.className} flex flex-col text-sm gap-1`}>
                 <div className="flex flex-col">
                     <label htmlFor="">Nome Completo</label>

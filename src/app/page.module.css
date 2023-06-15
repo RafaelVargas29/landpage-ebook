@@ -16,11 +16,10 @@
 
 .img {
   position: absolute;
-  width: 1030px;
-  height: 676px;
-  left: 483px;
-
-  background: url(../assets/ebook.png);
+  width: 830px;
+  height: 476px;
+  right:90px;
+  top: 30px;
 }
 
 .bg-main {
@@ -30,23 +29,18 @@
 .btn-gold {
     width: 123px;
     height: 29px;
-
+    
     background: linear-gradient(89.89deg, #F4D171 26.38%, #FCFBF8 54.57%, #F4D071 78.51%);
     border-radius: 5px;
 }
 
 .btn-blue {
-    position: absolute;
     width: 293px;
     height: 69px;
-    left: 679px;
-    top: 780px;
+    
     border-radius: 10px; 
 }
 
-.testimony {
-    top: 530px;
-}
 
 .form {
     top: 705px;
@@ -63,4 +57,17 @@
     border-radius: 10px;
     
     background: #0E9AFF;
+}
+
+.form-and-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-and-button {
+        flex-direction: column;
+    }
 }
