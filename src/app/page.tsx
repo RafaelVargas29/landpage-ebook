@@ -10,35 +10,29 @@ export default function Home() {
   return (
     <main className={`${styles['bg-main']} flex flex-col w-full h-screen container px-14 mx-14 gap-16`}>
         <div className='flex flex-col justify-center gap-16 py-36'>
-          {/* <div className={`${styles.img} hidden md:block`}>
-            <Image 
-              src={ebookImage}
-              fill
-              alt=''
-              className='object-cover'
-            />
-          </div> */}
-          
           <div>
             <Title />
+          </div>
+          
+          <div className={`${styles.img} hidden lg:block`}>
           </div>
 
           <div className={`${styles['featured-text']}  text-4xl md:text-5xl`}>
             <p>24 funcionalidades</p>
-            <p><span className={`${styles['geadiente-text']} font-bold`}>secretas</span> no seu iPhone</p>
+            <p><span className={`${styles['geadiente-text']}`}>secretas</span> no seu iPhone</p>
             <p>que irá te surpreender</p>
           </div>
-
-          <div className={``}>
+          
+          <div>
             <Testimony />
           </div>
-
+          
           <div className={`${styles['form-and-button']}`}>
             <div className={`${styles.form}`}>
               <Form />
             </div>
 
-            <div className={`${styles['btn-blue']} py-16`}>
+            <div className={`${styles['btn-blue']}`}>
               <Button />
             </div>
           </div>

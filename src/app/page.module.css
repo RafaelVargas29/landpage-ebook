@@ -12,14 +12,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-weight: bold;
 }
 
 .img {
   position: absolute;
   width: 830px;
-  height: 476px;
-  right:90px;
-  top: 30px;
+  height: 576px;
+  left: 483px;
+  top: 0px;
+
+  background-image: url('../assets/ebook.png');
+  background-size: contain;
 }
 
 .bg-main {
@@ -39,6 +43,7 @@
     height: 69px;
     
     border-radius: 10px; 
+    padding-top: 64px;
 }
 
 
