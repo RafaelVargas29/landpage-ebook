@@ -29,7 +29,7 @@
 .btn-gold {
     width: 123px;
     height: 29px;
-    
+
     background: linear-gradient(89.89deg, #F4D171 26.38%, #FCFBF8 54.57%, #F4D071 78.51%);
     border-radius: 5px;
 }
@@ -52,8 +52,8 @@
 
 .blue-dot {
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     border-radius: 10px;
     
     background: #0E9AFF;
@@ -69,5 +69,31 @@
 @media screen and (max-width: 768px) {
     .form-and-button {
         flex-direction: column;
+    }
+
+    .title {
+        width: 210px;
+        height: 29px;
+        top: 207px;
+    
+        background: rgba(173, 173, 173, 0.3);
+        border-radius: 17px;
+    }
+
+    .blue-dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 10px;
+        
+        background: #0E9AFF;
+    }
+    
+    .btn-gold {
+        width: 113px;
+        height: 22px;
+    
+        background: linear-gradient(89.89deg, #F4D171 26.38%, #FCFBF8 54.57%, #F4D071 78.51%);
+        border-radius: 5px;
     }
 }

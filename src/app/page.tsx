@@ -9,27 +9,27 @@ import Title from '@/components/Title';
 export default function Home() {
   return (
     <main className={`${styles['bg-main']} flex flex-col w-full h-screen container px-14 mx-14 gap-16`}>
-        <div className='flex flex-col gap-16 py-36'>
-          <div className={`${styles.img} hidden md:block`}>
+        <div className='flex flex-col justify-center gap-16 py-36'>
+          {/* <div className={`${styles.img} hidden md:block`}>
             <Image 
               src={ebookImage}
               fill
               alt=''
               className='object-cover'
             />
-          </div>
+          </div> */}
           
           <div>
             <Title />
           </div>
 
-          <div className={`${styles['featured-text']}  text-5xl`}>
+          <div className={`${styles['featured-text']}  text-4xl md:text-5xl`}>
             <p>24 funcionalidades</p>
             <p><span className={`${styles['geadiente-text']} font-bold`}>secretas</span> no seu iPhone</p>
             <p>que irá te surpreender</p>
           </div>
 
-          <div className={`${styles.testimony}`}>
+          <div className={``}>
             <Testimony />
           </div>
 

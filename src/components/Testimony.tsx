@@ -7,8 +7,8 @@ export default function Testimony () {
         <>
             <div className="flex flex-row gap-2 text-landWhite ">
                 <div>
-                    <div className="avatar placeholder">
-                        <div className="bg-neutral-focus text-neutral-content rounded-full w-32">
+                    <div className="avatar placeholder boder-2">
+                        <div className="bg-neutral-focus text-neutral-content rounded-full w-28 md:w-32">
                             <Image 
                                 src={mask}
                                 fill
@@ -19,14 +19,14 @@ export default function Testimony () {
                     </div> 
                 </div>
 
-                <div className="flex flex-col gap-4 w-96"> 
+                <div className="flex flex-col gap-4 w-80 md:w-96"> 
                     <div>
-                        <p className={`text-sm ${poppins.className}`}>Fisioterapeuta</p>
-                        <p className={`text-base font-bold ${poppins.className}`}>Lyvia Nagib Fulanetti</p>
-                        <p className={`text-base font-medium text-landBlue ${poppins.className}`}><a href="">@Lyvia Nagib Fulanetti</a></p>
+                        <p className={`text-xs md:text-sm ${poppins.className}`}>Fisioterapeuta</p>
+                        <p className={`text-sm md:text-base font-bold ${poppins.className}`}>Lyvia Nagib Fulanetti</p>
+                        <p className={`text-sm md:text-base font-medium text-landBlue ${poppins.className}`}><a href="">@Lyvia Nagib Fulanetti</a></p>
                     </div>
                     
-                    <div className="text-sm">
+                    <div className="text-xs md:text-sm">
                         <p className={`${poppins.className} font-medium`}>‘‘Adorei o ebook, tem muitas funções que eu não sabia e estou utilizando muito no meu dia.’’</p>
                     </div>
                 </div>
