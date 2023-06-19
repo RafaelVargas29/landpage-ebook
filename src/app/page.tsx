@@ -5,11 +5,22 @@ import ebookImage from '../assets/ebook.png';
 import Button from '@/components/Button';
 import styles from './page.module.css'
 import Title from '@/components/Title';
+import FeaturedText from '@/components/FeaturedText';
 
 export default function Home() {
   return (
-    <main className={`${styles['bg-main']} flex flex-col w-full h-screen container px-14 mx-14 gap-16`}>
-        <div className='flex flex-col justify-center gap-16 py-36'>
+    <main className={`
+          ${styles['bg-main']} 
+          w-full h-screen 
+          container 
+          px-28 
+          md:px-14 md:mx-14
+        `}>
+        <div className='
+          flex flex-col 
+          gap-8 md:gap-16 
+          py-2 md:py-36
+        '>
           <div>
             <Title />
           </div>
@@ -17,10 +28,8 @@ export default function Home() {
           <div className={`${styles.img} hidden lg:block`}>
           </div>
 
-          <div className={`${styles['featured-text']}  text-4xl md:text-5xl`}>
-            <p>24 funcionalidades</p>
-            <p><span className={`${styles['geadiente-text']}`}>secretas</span> no seu iPhone</p>
-            <p>que irá te surpreender</p>
+          <div className={`${styles['featured-text']}`}>
+            <FeaturedText />
           </div>
           
           <div>
@@ -36,8 +45,7 @@ export default function Home() {
               <Button />
             </div>
           </div>
-        </div>
-        
+        </div>   
     </main>
   )
 }

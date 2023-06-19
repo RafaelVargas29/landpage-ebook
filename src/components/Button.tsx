@@ -5,9 +5,23 @@ export default function Button () {
     return (
         <>
             <div className={`${poppins.className}`}>
-                <button className={`bg-landBlue rounded-lg h-14 md:h-16 w-72 text-2xl md:text-3xl font-bold`}>Baixar Ebook</button>
-                <div className={`${styles['btn-gold']} flex justify-center items-center relative left-52 bottom-3 text-landBlack`}>
-                    <p className="text-sm font-bold">Grátis Hoje!</p>
+                <button className={`
+                        bg-landBlue 
+                        rounded-lg 
+                        h-14 md:h-16 
+                        w-[270px] md:w-[17rem] 
+                        text-xl md:text-3xl 
+                        font-bold
+                    `}>Baixar Ebook</button>
+                <div className={`
+                        ${styles['btn-gold']} 
+                        flex justify-center items-center 
+                        relative 
+                        left-48 
+                        bottom-3 
+                        text-landBlack
+                    `}>
+                    <p className="text-xs font-bold">Grátis Hoje!</p>
                 </div>
             </div>
         </>
