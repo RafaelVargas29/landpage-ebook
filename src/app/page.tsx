@@ -10,7 +10,7 @@ import FeaturedText from '@/components/FeaturedText';
 export default function Home() {
   return (
     <main className={`
-          ${styles['bg-main']} 
+          ${styles['main']} 
           w-full h-screen 
           container 
           px-28 
@@ -18,14 +18,16 @@ export default function Home() {
         `}>
         <div className='
           flex flex-col 
-          gap-7 md:gap-16 
-          py-2 md:py-36
+          gap-16 md:gap-16 
+          pt-8
         '>
           <div>
             <Title />
           </div>
           
-          <div className={`${styles.img} hidden lg:block`}>
+          <div className='hidden lg:block relative top-[-230px] left-[-170px]'>
+            <div className={`${styles.img}`}>
+            </div>
           </div>
 
           <div className={`${styles['featured-text']}`}>

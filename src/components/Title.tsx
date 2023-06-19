@@ -4,17 +4,19 @@ export default function Title () {
 
     return (
         <>
-            
+        <div>
             <span className={`${styles.title} badge badge-ghost text-lg`}>
                 <p className='mr-5'>ebook</p> 
                 <p>grátis hoje</p>
             </span>
-            <span className={
-                `${styles['blue-dot']} 
-                relative 
-                top-[1.25rem] md:top-[10rem] 
-                left-[12rem] md:left-[12.3rem]`
-            }></span>
+            <div className={`
+                relative
+                top-[-17px] md:top-[-23px] 
+                left-[80px] md:left-[85px]`
+            }>
+                <div className={`${styles['blue-dot']}`}></div>
+            </div>
+        </div> 
         </>
     )
 }
