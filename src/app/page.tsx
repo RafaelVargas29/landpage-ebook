@@ -18,7 +18,7 @@ export default function Home() {
         `}>
         <div className='
           flex flex-col 
-          gap-8 md:gap-16 
+          gap-7 md:gap-16 
           py-2 md:py-36
         '>
           <div>
