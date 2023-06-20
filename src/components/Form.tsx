@@ -29,23 +29,33 @@ export default function Form () {
                 flex flex-col 
                 justify-start 
                 gap-2
-                w-[270px] md:w-[17rem]
+                w-full max-sm md:w-[17rem]
             ">
-            <form action="" className={`${poppins.className} flex flex-col text-10 md:text-sm gap-1`}>
-                <div className="flex flex-col">
+            <form action="" className={`${poppins.className} flex flex-col text-8 md:text-xs gap-2`}>
+                <div className="flex flex-col gap-1">
                     <label htmlFor="">Nome Completo</label>
-                    <input className='bg-landWhite h-8 text-landBlack px-2' type="name" name="email" id="name"/>
+                    <input 
+                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
+                        type="name" 
+                        name="email" 
+                        id="name"
+                    />
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-1">
                     <label htmlFor="">E-mail</label>
-                    <input className='bg-landWhite h-8 text-landBlack px-2' type="email" name="email" id="email"/>
+                    <input 
+                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                    />
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-1">
                     <label htmlFor="">Whatsapp</label>
                     <input 
-                        className='bg-landWhite h-8 text-landBlack px-2' 
+                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
                         type="whatsapp" 
                         name="whatsapp" 
                         id="whatsapp"
@@ -57,7 +67,7 @@ export default function Form () {
                     />
                 </div>
             </form>
-            <p className="text-[0.625rem] md:text-8">Você receberá seu ebook em seu número de whatsApp.</p>
+            <p className="text-[7px] md:text-8">Você receberá seu ebook em seu número de whatsApp.</p>
         </div>
     )
 }

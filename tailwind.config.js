@@ -22,7 +22,7 @@ module.exports = {
       landBlack: '#000000',
     },
     fontSize: {
-      8: ['8', '4'],
+      8: ['8px', '4px'],
       10: ['10px', '14px'],
       xs: ['12px', '16px'],
       sm: ['14px', '20px'],

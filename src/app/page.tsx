@@ -18,19 +18,20 @@ export default function Home() {
         `}>
         <div className='
           flex flex-col 
-          gap-16 md:gap-16 
-          pt-8
+          md:px-28
+          gap-12 md:gap-12 
+          pt-1
         '>
-          <div>
-            <Title />
-          </div>
-          
-          <div className='hidden lg:block relative top-[-230px] left-[-170px]'>
+          <div className='hidden lg:block relative top-[-75px] left-[-170px]'>
             <div className={`${styles.img}`}>
             </div>
           </div>
 
-          <div className={`${styles['featured-text']}`}>
+          <div>
+            <Title />
+          </div>
+
+          <div>
             <FeaturedText />
           </div>
           

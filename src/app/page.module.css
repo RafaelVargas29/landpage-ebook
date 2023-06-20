@@ -1,6 +1,6 @@
 .title {
-    width: 220px;
-    height: 39px;
+    width: 190px;
+    height: 29px;
     top: 207px;
 
     background: rgba(173, 173, 173, 0.3);
@@ -17,10 +17,9 @@
 
 .img {
   position: absolute;
-  width: 930px;
-  height: 676px;
+  width: 730px;
+  height: 476px;
   left: 483px;
-  top: 0px;
 
   background-image: url('../assets/ebook.png');
   background-size: contain;
@@ -47,10 +46,6 @@
 
 .form {
     top: 705px;
-}
-
-.featured-text {
-    top: 289px;
 }
 
 .blue-dot {
