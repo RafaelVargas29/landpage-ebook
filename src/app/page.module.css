@@ -49,8 +49,8 @@
 }
 
 .blue-dot {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 10px;
     
     background: #0E9AFF;
@@ -70,8 +70,8 @@
     }
 
     .title {
-        width: 210px;
-        height: 29px;
+        width: 160px;
+        height: 25px;
         top: 207px;
     
         background: rgba(173, 173, 173, 0.3);
@@ -80,8 +80,8 @@
 
     .blue-dot {
         position: absolute;
-        width: 8px;
-        height: 8px;
+        width: 5px;
+        height: 5px;
         border-radius: 10px;
         
         background: #0E9AFF;

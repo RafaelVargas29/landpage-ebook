@@ -23,6 +23,7 @@ module.exports = {
       landGray2: '#ADADAD',
       landGold: '#F4D171',
       landBlack: '#000000',
+      hoverBlue: '#007dd7',
     },
     fontSize: {
       8: ['8px', '4px'],

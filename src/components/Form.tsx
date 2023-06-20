@@ -60,7 +60,7 @@ export default function Form () {
                         id="whatsapp"
                         value={form.whatsapp}
                         onChange={handleChange}
-                        placeholder="(99) 9999-9999 "
+                        placeholder="(99) 9999-9999"
                         maxLength={15}
                         required
                     />
