@@ -1,12 +1,12 @@
-import { poppins } from "@/app/fonts"
+
 import styles from '../app/page.module.css'
 
 export default function Button () {
     return (
         <>
-            <div className={`${poppins.className} pt-[20px] md:pt-[64px]`}>
+            <div className={`font-poppins font-bold pt-[20px] md:pt-[64px]`}>
                 <button className={`
-                        btn
+                        
                         bg-landBlue 
                         rounded-lg 
                         md:h-16 

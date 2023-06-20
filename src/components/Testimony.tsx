@@ -1,4 +1,4 @@
-import { poppins } from "@/app/fonts"
+
 import  mask  from '../assets/mask_group.png'
 import Image from "next/image"
 
@@ -21,13 +21,13 @@ export default function Testimony () {
 
                 <div className="flex flex-col gap-2 md:gap-2 w-60 md:w-80"> 
                     <div>
-                        <p className={`text-10 md:text-xs ${poppins.className}`}>Fisioterapeuta</p>
-                        <p className={`text-xs md:text-sm font-bold ${poppins.className}`}>Lyvia Nagib Fulanetti</p>
-                        <p className={`text-xs md:text-sm font-medium text-landBlue ${poppins.className}`}><a href="">@Lyvia Nagib Fulanetti</a></p>
+                        <p className={`text-10 md:text-xs font-poppins font-medium`}>Fisioterapeuta</p>
+                        <p className={`text-xs md:text-sm font-bold font-poppins`}>Lyvia Nagib Fulanetti</p>
+                        <p className={`text-xs md:text-sm font-medium text-landBlue font-poppins`}><a href="">@Lyvia Nagib Fulanetti</a></p>
                     </div>
                     
                     <div className="text-10 md:text-xs">
-                        <p className={`${poppins.className} font-medium`}>‘‘Adorei o ebook, tem muitas funções que eu não sabia e estou utilizando muito no meu dia.’’</p>
+                        <p className={`font-poppins font-medium`}>‘‘Adorei o ebook, tem muitas funções que eu não sabia e estou utilizando muito no meu dia.’’</p>
                     </div>
                 </div>
             </div>

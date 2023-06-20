@@ -1,5 +1,4 @@
 "use client"
-import { poppins } from "@/app/fonts"
 import { useState } from 'react';
 
 export default function Form () {
@@ -31,7 +30,7 @@ export default function Form () {
                 gap-2
                 w-full max-sm md:w-[17rem]
             ">
-            <form action="" className={`${poppins.className} flex flex-col text-8 md:text-xs gap-2`}>
+            <form action="" className={`font-poppins flex flex-col text-8 md:text-xs gap-2`}>
                 <div className="flex flex-col gap-1">
                     <label htmlFor="">Nome Completo</label>
                     <input 
