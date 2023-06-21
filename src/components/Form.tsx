@@ -27,14 +27,13 @@ export default function Form () {
         <div className="
                 flex flex-col 
                 justify-start 
-                gap-2
-                w-full max-sm md:w-[17rem]
+                w-full max-sm md:w-[20rem]
             ">
-            <form action="" className={`flex flex-col gap-2`} >
-                <div className=" form-control w-full">
+            <form action="" className={`flex flex-col md:gap-0`} >
+                <div className="form-control w-full">
                     <label htmlFor="name" className='label'>Nome Completo</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full' 
+                        className='input bg-landWhite text-landBlack w-full h-10' 
                         type="text" 
                         name="name" 
                         id="name"
@@ -44,7 +43,7 @@ export default function Form () {
                 <div className=" form-control w-full">
                     <label htmlFor="email" className='label'>E-mail</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full' 
+                        className='input bg-landWhite text-landBlack w-full h-10' 
                         type="email" 
                         name="email" 
                         id="email"
@@ -54,7 +53,7 @@ export default function Form () {
                 <div className=" form-control w-full">
                     <label htmlFor="whatsapp" className='label'>Whatsapp</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full' 
+                        className='input bg-landWhite text-landBlack w-full h-10' 
                         type="tel" 
                         name="whatsapp" 
                         id="whatsapp"
@@ -66,7 +65,7 @@ export default function Form () {
                     />
                 </div>
             </form>
-            <p className="text-[7px] md:text-8">Você receberá seu ebook em seu número de whatsApp.</p>
+            <p className="text-10">Você receberá seu ebook em seu número de whatsApp.</p>
         </div>
     )
 }

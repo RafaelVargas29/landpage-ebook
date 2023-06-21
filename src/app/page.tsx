@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className={`
           font-poppins
+          bg-landGray
         `}>
         <div className='
           flex flex-col
@@ -18,21 +19,21 @@ export default function Home() {
           max-w-4xl
           p-6
           mx-auto
-          gap-12
+          gap-20 md:gap-14
         '>
           <div className={`${styles.img} hidden lg:block absolute`}>
           </div>
-          <Title />
-          <FeaturedText />
-          <Testimony />
-          <div className={`${styles['form-and-button']}`}>
-            <div className={`${styles.form}`}>
-              <Form />
-            </div>
 
-            <div className={`${styles['btn-blue']}`}>
-              <Button />
-            </div>
+          <Title />
+
+          <FeaturedText />
+
+          <Testimony />
+
+          <div className={`${styles['form-and-button']}`}>
+            <Form />
+
+            <Button />
           </div>
         </div>   
     </main>

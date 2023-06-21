@@ -25,18 +25,12 @@
   background-size: contain;
 }
 
-
-
 .btn-gold {
     width: 123px;
     height: 29px;
 
     background: linear-gradient(89.89deg, #F4D171 26.38%, #FCFBF8 54.57%, #F4D071 78.51%);
     border-radius: 5px;
-}
-
-.form {
-    top: 705px;
 }
 
 .blue-dot {
