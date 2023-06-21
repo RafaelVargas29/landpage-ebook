@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Testimony () {
     return (
         <>
-        <div className="carousel max-w-xs md:max-w-md">
+        <div className="carousel">
             <div id="item1" className="carousel-item w-full">
                 <div className="flex flex-row gap-2 text-landWhite ">
                     <div>
@@ -117,12 +117,6 @@ export default function Testimony () {
                     </div>
                 </div>
             </div> 
-        </div>
-        <div className="flex justify-start w-full py-2 gap-2">
-            <a href="#item1" className="btn btn-xs">1</a> 
-            <a href="#item2" className="btn btn-xs">2</a> 
-            <a href="#item3" className="btn btn-xs">3</a> 
-            <a href="#item4" className="btn btn-xs">4</a>
         </div>
         </>
     )

@@ -21,7 +21,7 @@ export default function Button () {
                         border-landGold 
                         flex justify-center items-center 
                         relative 
-                        left-60 md:left-48 
+                        
                         bottom-2 md:bottom-3 
                         text-landBlack
                     `}>

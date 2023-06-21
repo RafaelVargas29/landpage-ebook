@@ -16,25 +16,16 @@
 }
 
 .img {
-  position: absolute;
   width: 730px;
   height: 476px;
-  left: 483px;
+  top: 0;
+  right: -300px;
 
   background-image: url('../assets/ebook.png');
   background-size: contain;
 }
 
-.main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
 
-    max-width: 1180;
-    margin: auto;
-
-    background: linear-gradient(117.04deg, #090909 9.51%, rgba(9, 9, 9, 0.94) 98.98%);
-}
 
 .btn-gold {
     width: 123px;
@@ -58,8 +49,8 @@
 
 .form-and-button {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 270px;
 }
 
 
@@ -79,7 +70,6 @@
     }
 
     .blue-dot {
-        position: absolute;
         width: 5px;
         height: 5px;
         border-radius: 10px;

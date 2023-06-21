@@ -10,35 +10,21 @@ import FeaturedText from '@/components/FeaturedText';
 export default function Home() {
   return (
     <main className={`
-          ${styles['main']} 
-          w-full h-screen 
-          container 
-          px-28 
-          md:px-14 md:mx-14
+          font-poppins
         `}>
         <div className='
-          flex flex-col 
-          md:px-28
-          gap-12 md:gap-12 
-          pt-1
+          flex flex-col
+          relative
+          max-w-4xl
+          p-6
+          mx-auto
+          gap-12
         '>
-          <div className='hidden lg:block relative top-[-75px] left-[-170px]'>
-            <div className={`${styles.img}`}>
-            </div>
+          <div className={`${styles.img} hidden lg:block absolute`}>
           </div>
-
-          <div>
-            <Title />
-          </div>
-
-          <div>
-            <FeaturedText />
-          </div>
-          
-          <div>
-            <Testimony />
-          </div>
-          
+          <Title />
+          <FeaturedText />
+          <Testimony />
           <div className={`${styles['form-and-button']}`}>
             <div className={`${styles.form}`}>
               <Form />

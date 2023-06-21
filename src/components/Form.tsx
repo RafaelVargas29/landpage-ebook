@@ -30,32 +30,32 @@ export default function Form () {
                 gap-2
                 w-full max-sm md:w-[17rem]
             ">
-            <form action="" className={`font-poppins flex flex-col text-8 md:text-xs gap-2`}>
-                <div className="flex flex-col gap-1">
-                    <label htmlFor="">Nome Completo</label>
+            <form action="" className={`flex flex-col gap-2`} >
+                <div className=" form-control w-full">
+                    <label htmlFor="name" className='label'>Nome Completo</label>
                     <input 
-                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
-                        type="name" 
-                        name="email" 
+                        className='input bg-landWhite text-landBlack w-full' 
+                        type="text" 
+                        name="name" 
                         id="name"
                     />
                 </div>
 
-                <div className="flex flex-col gap-1">
-                    <label htmlFor="">E-mail</label>
+                <div className=" form-control w-full">
+                    <label htmlFor="email" className='label'>E-mail</label>
                     <input 
-                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
+                        className='input bg-landWhite text-landBlack w-full' 
                         type="email" 
                         name="email" 
                         id="email"
                     />
                 </div>
 
-                <div className="flex flex-col gap-1">
-                    <label htmlFor="">Whatsapp</label>
+                <div className=" form-control w-full">
+                    <label htmlFor="whatsapp" className='label'>Whatsapp</label>
                     <input 
-                        className='bg-landWhite h-5 md:h-7 text-landBlack px-2' 
-                        type="whatsapp" 
+                        className='input bg-landWhite text-landBlack w-full' 
+                        type="tel" 
                         name="whatsapp" 
                         id="whatsapp"
                         value={form.whatsapp}
