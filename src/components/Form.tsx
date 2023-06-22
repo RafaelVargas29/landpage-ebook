@@ -29,9 +29,9 @@ export default function Form () {
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const input = e.target.value;
-    const formattedWhatsapp = formatWhatsapp(input);
-    setForm({ ...form, whatsapp: formattedWhatsapp });
+        const input = e.target.value;
+        const formattedWhatsapp = formatWhatsapp(input);
+        setForm({ ...form, whatsapp: formattedWhatsapp });
     };
 
     return (
