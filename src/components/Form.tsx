@@ -31,9 +31,9 @@ export default function Form () {
             ">
             <form action="" className={`flex flex-col md:gap-0`} >
                 <div className="form-control w-full">
-                    <label htmlFor="name" className='label'>Nome Completo</label>
+                    <label htmlFor="name" className='label text-13'>Nome Completo</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full h-10' 
+                        className='input bg-landWhite text-landBlack w-full h-8 md:h-10' 
                         type="text" 
                         name="name" 
                         id="name"
@@ -41,9 +41,9 @@ export default function Form () {
                 </div>
 
                 <div className=" form-control w-full">
-                    <label htmlFor="email" className='label'>E-mail</label>
+                    <label htmlFor="email" className='label text-13'>E-mail</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full h-10' 
+                        className='input bg-landWhite text-landBlack w-full h-8 md:h-10' 
                         type="email" 
                         name="email" 
                         id="email"
@@ -51,9 +51,9 @@ export default function Form () {
                 </div>
 
                 <div className=" form-control w-full">
-                    <label htmlFor="whatsapp" className='label'>Whatsapp</label>
+                    <label htmlFor="whatsapp" className='label text-13'>Whatsapp</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full h-10' 
+                        className='input bg-landWhite text-landBlack w-full h-8 md:h-10' 
                         type="tel" 
                         name="whatsapp" 
                         id="whatsapp"

@@ -6,7 +6,8 @@ export default function Button () {
         <>
             <div className={`font-bold pt-[25px] md:pt-[64px]`}>
                 <button className={`
-                        
+                        btn
+                        hover:bg-hoverBlue
                         bg-landBlue 
                         rounded-lg 
                         md:h-16 

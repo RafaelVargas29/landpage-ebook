@@ -6,6 +6,7 @@ import Button from '@/components/Button';
 import styles from './page.module.css'
 import Title from '@/components/Title';
 import FeaturedText from '@/components/FeaturedText';
+import ImageEbook from '@/components/ImageEbook';
 
 export default function Home() {
   return (
@@ -19,10 +20,9 @@ export default function Home() {
           max-w-4xl
           p-6
           mx-auto
-          gap-20 md:gap-14
+          gap-24 md:gap-9
         '>
-          <div className={`${styles.img} hidden lg:block absolute`}>
-          </div>
+          <ImageEbook />
 
           <Title />
 
@@ -30,7 +30,7 @@ export default function Home() {
 
           <Testimony />
 
-          <div className={`${styles['form-and-button']}`}>
+          <div className={`flex flex-col justify-between md:flex-row`}>
             <Form />
 
             <Button />
