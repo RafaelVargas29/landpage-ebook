@@ -1,20 +1,31 @@
 "use client"
 import { useState } from 'react';
+import { useEffect, useRef } from 'react';
+import Inputmask from 'inputmask';
 
 export default function Form () {
+    const inputRef = useRef<HTMLInputElement>(null);
+    const initialMask = '(99) 99999-9999';
+
+    useEffect(() => {
+        if (inputRef.current) {
+          Inputmask(initialMask).mask(inputRef.current);
+        }
+    }, []);
+
     const [form, setForm] = useState({
         whatsapp: '',
     });
     
     const formatWhatsapp = (input: string): string => {
-    const cleaned = input.replace(/\D/g, '');
-    const match = cleaned.match(/^(\d{2})(\d{5})(\d{4})$/);
+        const cleaned = input.replace(/\D/g, '');
+        const match = cleaned.match(/^(\d{2})(\d{5})(\d{4})$/);
 
-    if (match) {
-        return `(${match[1]}) ${match[2]}-${match[3]}`;
-    }
+        if (match) {
+            return `(${match[1]}) ${match[2]}-${match[3]}`;
+        }
 
-    return cleaned;
+        return cleaned;
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -53,7 +64,8 @@ export default function Form () {
                 <div className=" form-control w-full">
                     <label htmlFor="whatsapp" className='label text-13'>Whatsapp</label>
                     <input 
-                        className='input bg-landWhite text-landBlack w-full h-8 md:h-10' 
+                        className='input bg-landWhite text-landBlack w-full h-8 md:h-10'
+                        ref={inputRef} 
                         type="tel" 
                         name="whatsapp" 
                         id="whatsapp"
