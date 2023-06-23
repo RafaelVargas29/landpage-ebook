@@ -1,38 +1,15 @@
 "use client"
 import { useState } from 'react';
-import { useEffect, useRef } from 'react';
-import Inputmask from 'inputmask';
+import { mask, unMask } from 'remask';
 
 export default function Form () {
-    const inputRef = useRef<HTMLInputElement>(null);
-    const initialMask = '(99) 99999-9999';
+   const [ whatsapp, setWhatsapp ] = useState('');
 
-    useEffect(() => {
-        if (inputRef.current) {
-          Inputmask(initialMask).mask(inputRef.current);
-        }
-    }, []);
-
-    const [form, setForm] = useState({
-        whatsapp: '',
-    });
-    
-    const formatWhatsapp = (input: string): string => {
-        const cleaned = input.replace(/\D/g, '');
-        const match = cleaned.match(/^(\d{2})(\d{5})(\d{4})$/);
-
-        if (match) {
-            return `(${match[1]}) ${match[2]}-${match[3]}`;
-        }
-
-        return cleaned;
-    };
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const input = e.target.value;
-        const formattedWhatsapp = formatWhatsapp(input);
-        setForm({ ...form, whatsapp: formattedWhatsapp });
-    };
+    const onChange = (e: { target: { value: string; }; }) => {
+        const unmaskedValue = unMask(e.target.value);
+        const maskedValue = mask(unmaskedValue, ['(99) 99999-9999']);
+        setWhatsapp(maskedValue);
+   }
 
     return (
         <div className="
@@ -65,12 +42,12 @@ export default function Form () {
                     <label htmlFor="whatsapp" className='label text-13'>Whatsapp</label>
                     <input 
                         className='input bg-landWhite text-landBlack w-full h-8 md:h-10'
-                        ref={inputRef} 
+                        
                         type="tel" 
                         name="whatsapp" 
                         id="whatsapp"
-                        value={form.whatsapp}
-                        onChange={handleChange}
+                        value={whatsapp}
+                        onChange={onChange}
                         placeholder="(99) 9999-9999"
                         maxLength={15}
                         required
