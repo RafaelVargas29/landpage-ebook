@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Testimony () {
     return (
         <>
-        <div className="carousel w-[500px]">
+        <div className="carousel md:w-[500px]">
             <div id="item1" className="carousel-item w-full">
                 <div className="flex flex-row gap-2 text-landWhite ">
                     <div>
