@@ -18,9 +18,10 @@ export default function Home() {
           flex flex-col
           relative
           max-w-4xl
+          min-h-screen
           p-6
           mx-auto
-          gap-24 md:gap-9
+          gap-14 md:gap-9
         '>
           <ImageEbook />
 
