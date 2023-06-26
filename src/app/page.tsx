@@ -31,11 +31,7 @@ export default function Home() {
 
           <Testimony />
 
-          <div className={`flex flex-col justify-between md:flex-row`}>
-            <Form />
-
-            <Button />
-          </div>
+          <Form />
         </div>   
     </main>
   )
