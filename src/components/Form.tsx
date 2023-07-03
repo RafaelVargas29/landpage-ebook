@@ -69,6 +69,7 @@ export default function Form() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        window.location.href = "/thanks";
       })
       .catch((error) => {
         console.error(error);
