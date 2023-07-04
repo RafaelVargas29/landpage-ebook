@@ -173,6 +173,7 @@ export default function Form() {
             `}
             disabled={isButtonDisabled}
           >
+            {isButtonDisabled && (<span className="loading loading-spinner loading-sm"></span>)}
             {isButtonDisabled ? 'Carregando...' : 'Baixar Ebook'}
           </button>
           <div className={`
