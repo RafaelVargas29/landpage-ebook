@@ -5,6 +5,7 @@ import { mask, unMask } from 'remask';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import styles from '../app/page.module.css'
 import { error } from 'console';
 import Button from './Button';
 
@@ -34,6 +35,7 @@ type ebookFreeFormData = z.infer<typeof ebookFreeFormSchema>;
 export default function Form() {
   const [whatsapp, setWhatsapp] = useState('');
   const [output, setOutput] = useState('');
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const {
     register,
@@ -65,6 +67,8 @@ export default function Form() {
     console.log(requestOptions);
 
     if(process.env.NEXT_PUBLIC_URL) {
+      setIsButtonDisabled(true);
+
       fetch(process.env.NEXT_PUBLIC_URL, requestOptions)
       .then((response) => response.json())
       .then((data) => {
@@ -73,6 +77,7 @@ export default function Form() {
       })
       .catch((error) => {
         console.error(error);
+        setIsButtonDisabled(false);
       });
     }
   }
@@ -141,8 +146,36 @@ export default function Form() {
           </div>
           <p className="text-10">Você receberá seu ebook em seu número de WhatsApp.</p>
         </div>
-        <div>
-          <Button />
+        <div className={`font-bold pt-[25px] md:pt-[64px]`}>
+          <button
+            className={`
+              btn
+              hover:bg-hoverBlue
+              bg-landBlue 
+              rounded-lg 
+              md:h-16 
+              h-12
+              w-full md:w-[17rem] 
+              text-lg md:text-2xl 
+              text-landWhite
+              font-bold
+            `}
+            disabled={isButtonDisabled}
+          >
+            {isButtonDisabled ? 'Carregando...' : 'Baixar Ebook'}
+          </button>
+          <div className={`
+            ${styles['btn-gold']}
+            badge
+            border-landGold 
+            flex justify-center items-center 
+            relative 
+            left-[245px] md:left-[190px]
+            bottom-2 md:bottom-3 
+            text-landBlack
+          `}>
+            <p className="text-xs font-bold">Grátis Hoje!</p>
+          </div>
         </div>
       </div>
     </form>
