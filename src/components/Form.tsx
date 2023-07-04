@@ -66,19 +66,30 @@ export default function Form() {
     };
     console.log(requestOptions);
 
-    if(process.env.NEXT_PUBLIC_URL) {
+    if (process.env.NEXT_PUBLIC_URL) {
       setIsButtonDisabled(true);
-
+    
       fetch(process.env.NEXT_PUBLIC_URL, requestOptions)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        window.location.href = "/thanks";
-      })
-      .catch((error) => {
-        console.error(error);
-        setIsButtonDisabled(false);
-      });
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Erro na requisição: " + response.status);
+          }
+          return response.text();
+        })
+        .then((data) => {
+          try {
+            const jsonData = JSON.parse(data);
+            console.log(jsonData);
+            window.location.href = "/thanks";
+          } catch (error) {
+            window.location.href = "/thanks";
+            throw new Error("Erro ao analisar os dados JSON");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+          setIsButtonDisabled(false);
+        });
     }
   }
 
